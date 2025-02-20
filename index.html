@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header class="header">
-        <img src="images/logo7.jpg" alt="Логотип" width="150" height="150">
+        <img class="header__logo" src="images/logo7.jpg" alt="Логотип" width="150" height="150">
         <h1 class="header__title">Онлайн-школа Вектор</h1>
         <nav>
             <ul class="menu">
@@ -23,18 +25,21 @@
                     <a class="menu__link" href="#">Отзывы</a></li>
             </ul>
         </nav>
-        <button type="button" class="header__button">Записаться на курс</button>
+        <button class="header__button" type="button" >Записаться на курс</button>
 
     </header>
-    <main>
+
+
+    <main class="main">
+
         <section class="about">
             <ul>
-            <h2>О нас</h2>
+            <h2 class="about__title"> О нас</h2>
             <div>
-                <img src="images/about.jpg" alt="О нас" width="500" height="500">
+                <img class="about__image" src="images/about.jpg" alt="О нас" width="500" height="500">
             </div>
             <div>
-                <p>Добро пожаловать в школу «Вектор»! Мы – это место, где рождаются и развиваются таланты в сфере
+                <p class="about__desc">Добро пожаловать в школу «Вектор»! Мы – это место, где рождаются и развиваются таланты в сфере
                     цифровых технологий. Наша миссия – предоставить каждому ученику возможность освоить современные
                     навыки, которые помогут им уверенно двигаться вперед в мире высоких технологий.
                     Мы гордимся нашей командой – молодыми специалистами, которые не только обладают глубокими
@@ -47,6 +52,8 @@
                     Присоединяйтесь к нам и начните свой путь к успеху уже сегодня!</p>
             </div>
         </section>
+
+
         <section class="courses">
             <ul>
             <h2 class="courses__title">Онлайн-курсы</h2>
@@ -56,16 +63,12 @@
                     <img class="courses__image" src="images/course_1.jpg" alt="Курс 1" width="250" height="250">
                     <a class="courses__name" href="#">Основы программирования на Python</a>
                     <span class="courses__desc">Описание:Этот курс предназначен для тех, кто хочет начать свой путь в программировании. Мы изучим основы языка Python – одного из самых популярных языков программирования в мире. Вы научитесь писать простые программы, работать с данными, создавать функции и использовать библиотеки. Курс подойдет как новичкам, так и тем, у кого уже есть базовые знания. Чему вы научитесь:
-
-
-
                         Чему вы научитесь:
                         <ol>
-                            <li>Основы реляционных баз данных;
-                                ;</li>
-                            <li>Работа с переменными, условиями и циклами;</li>
-                            <li>Создание функций и работа с модулями;</li>
-                            <li>Введение в работу с библиотеками (например, NumPy, Pandas).</li>
+                            <li class="courses__item">Основы реляционных баз данных;</li>
+                            <li class="courses__item">Работа с переменными, условиями и циклами;</li>
+                            <li class="courses__item">Создание функций и работа с модулями;</li>
+                            <li class="courses__item">Введение в работу с библиотеками (например, NumPy, Pandas).</li>
                         </ol>
                         Продолжительность: 8 недель</span>
                        
@@ -79,28 +82,27 @@
                     <span class="courses__desc">Описание:Курс посвящен созданию веб-сайтов с использованием современных технологий HTML, CSS и JavaScript. Вы узнаете, как верстать страницы, стилизовать их и добавлять интерактивные элементы. По окончании курса вы сможете создать полноценный сайт и разместить его в интернете.
                         Чему вы научитесь:
                         <ol>
-                        <li>Основы HTML и CSS;</li>
-                        <li>Верстка адаптивных макетов;</li>
-                        <li>Использование JavaScript для добавления динамических элементов;</li>
-                        <li>Размещение сайта на хостинге.</li>
+                        <li class="courses__item">Основы HTML и CSS;</li>
+                        <li class="courses__item">Верстка адаптивных макетов;</li>
+                        <li class="courses__item">Использование JavaScript для добавления динамических элементов;</li>
+                        <li class="courses__item">Размещение сайта на хостинге.</li>
                     </ol>
                     Продолжительность: 10 недель
                     </span>
                     
             </div>
                 <button class="courses__button" type="button">></button>
-                <div class="courses__card">
-                    
+            <div class="courses__card">
                     <img class="courses__image" src="images/course_2.jpg" alt="Курс 3" width="250" height="250">
                     <a class="courses__name" href="#">Анализ данных с помощью SQL</a>
                     <span class="courses__desc">Описание:На этом курсе вы освоите язык запросов SQL, который является стандартным инструментом для работы с базами данных. Вы научитесь извлекать данные, фильтровать их, выполнять сложные запросы и анализировать информацию. Курс идеально подходит для аналитиков, маркетологов и всех, кто работает с большими объемами данных.
 
                         Чему вы научитесь:
                         <ol>
-                            <li>Основы реляционных баз данных;</li>
-                            <li>Написание простых и сложных SQL-запросов;</li>
-                            <li>Объединение таблиц и агрегация данных;</li>
-                            <li>Оптимизация запросов.</li>
+                            <li class="courses__item">Основы реляционных баз данных;</li>
+                            <li class="courses__item">Написание простых и сложных SQL-запросов;</li>
+                            <li class="courses__item">Объединение таблиц и агрегация данных;</li>
+                            <li class="courses__item">Оптимизация запросов.</li>
                         </ol>
                         Продолжительность: 6 недель
                     </span>
@@ -109,78 +111,78 @@
             </ul>
             <button class="courses__button" type="button">></button>
         </section>
+        
+        
         <section class="adv">
             <ul>
             <div>
-                <p >«Стань востребованным специалистом всего за 6 месяцев с индивидуальным подходом и гарантированным
-                    трудоустройством!»</p>
-            </div>
-            <div>
-                <p>Почему выбирают нас?</p>
+                <p class="adv__title">Почему выбирают нас?</p>
                 <ol>
-                    <li>Индивидуальные программы обучения под ваши цели</li>
-                    <li>Преподаватели-практики из ведущих IT-компаний</li>
-                    <li>Реальные проекты в портфолио уже во время учебы</li>
-                    <li>Гарантированное трудоустройство после успешного завершения курса</li>
+                    <li class="adv__item">Индивидуальные программы обучения под ваши цели</li>
+                    <li class="adv__item">Преподаватели-практики из ведущих IT-компаний</li>
+                    <li class="adv__item">Реальные проекты в портфолио уже во время учебы</li>
+                    <li class="adv__item">Гарантированное трудоустройство после успешного завершения курса</li>
                 </ol>
             </div>
         </section>
-        <section class="questions">
+
+
+        <section class="question">
             <ul>
-            <h2>Часто задаваемые вопросы</h2>
+            <h2 class="question__title">Часто задаваемые вопросы</h2>
             <div>
-                <h3 class="question__title">Какую поддержку я буду получать во время обучения?</h3>
+                <h3 class="question__list">Какую поддержку я буду получать во время обучения?</h3>
                 <p class="question__answer">Ответ:Мы предоставляем круглосуточную техническую поддержку через чат и электронную почту. Кроме того, наши преподаватели всегда готовы ответить на ваши вопросы и предоставить обратную связь по выполненным заданиям. Также у нас есть форумы, где студенты могут общаться друг с другом и делиться опытом.</p>
                 
-                <h3 class="question__title">Есть ли у вас сертификаты по окончанию курса?</h3>
+                <h3 class="question__list">Есть ли у вас сертификаты по окончанию курса?</h3>
                 <p class="question__answer">Ответ:Да, по завершении каждого курса вы получите сертификат, подтверждающий ваше обучение и приобретенные навыки. Этот документ можно добавить в резюме и показать работодателям.</p>
 
-                <h3 class="question__title">Могу ли я получить доступ к материалам курса после окончания обучения?</h3>
+                <h3 class="question__list">Могу ли я получить доступ к материалам курса после окончания обучения?</h3>
                 <p class="question__answer">Ответ:Да, после завершения курса вы сохраняете доступ ко всем учебным материалам, включая видеоуроки, презентации и задания. Это позволит вам возвращаться к пройденному материалу в любое время и продолжать совершенствовать свои навыки.</p>
 
-                <h3 class="question__title"> Можно ли оплачивать курс частями?</h3>
+                <h3 class="question__list"> Можно ли оплачивать курс частями?</h3>
                 <p class="question__answer">Ответ:Да, мы предлагаем возможность оплаты курса частями. Вы можете выбрать удобный для вас план платежей, который будет разбит на несколько месяцев. Подробности об условиях оплаты уточняйте у нашего менеджера.</p>
 
-                <h3 class="question__title"> Есть ли у вас бесплатные пробные уроки?</h3>
+                <h3 class="question__list"> Есть ли у вас бесплатные пробные уроки?</h3>
                 <p class="question__answer">Ответ:Да, перед началом некоторых курсов мы предлагаем пройти бесплатный вводный урок или мини-курс, чтобы вы могли оценить качество преподавания и понять, подходит ли вам наш формат обучения.</p>
             </div>
-
-
-
         </section>
+
+
         <section class="form"> 
             <ul>
             <form action="nata.parshkova1908@mail.ru">
-                <h1>Записаться на курс</h1>
-              <input type="text" name="name" placeholder="ФИО" required>
-              <input type="tel" name="phone" placeholder="Номер телефона" required>
-              <input type="email" name="email" placeholder="Электронная почта" required>
+                <h1 class="form__title">Записаться на курс</h1>
+              <input class="form__list" type="text" name="name" placeholder="ФИО" required>
+              <input class="form__list" type="tel" name="phone" placeholder="Номер телефона" required>
+              <input class="form__list" type="email" name="email" placeholder="Электронная почта" required>
               <button class="form__button">Записаться</button>
               
             </form>
         </section>
-
     </main>
+
+
     <footer class="footer">
-        <p></p>Сайт создан Паршковой Натальей, Поповой Алекандрой, Поповой Полиной СВ-21</p>
-        <ul>
-        <li><a href="#">Правовая оговорка</a></li>
-        <li><a href="#">Пользовательские соглашения</a></li>
-        <li><a href="#">Политика конфиденциальности</a></li>
-        <form action="https://vk.me/i2crm" method="GET">
-            <button type="submit" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/200px-VK_Compact_Logo_%282021-present%29.svg.png"
+        <ul class="footer__title">Сайт создан Паршковой Натальей, Поповой Алекандрой, Поповой Полиной СВ-21</ul>
+    <ul>
+        <li class="footer__item"><a href="#">Правовая оговорка</a></li>
+        <li class="footer__item"><a href="#">Пользовательские соглашения</a></li>
+        <li class="footer__item"><a href="#">Политика конфиденциальности</a></li>
+        <form class="footer__link" action="https://vk.me/i2crm" method="GET">
+            <button class="footer__button" type="submit" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/VK_Compact_Logo_%282021-present%29.svg/200px-VK_Compact_Logo_%282021-present%29.svg.png"
             width="50"  height="50" alt="Напишите нам!"></button>
-          </form> 
+        </form> 
 
-         <form action="https://t.me/i2crm" method="GET">
-            <button type="submit" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/80px-Telegram_2019_Logo.svg.png"
+        <form class="footer__link" action="https://t.me/i2crm" method="GET">
+            <button class="footer__button" type="submit" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/80px-Telegram_2019_Logo.svg.png"
             width="50"  height="50" alt="Напишите нам!"></button>
-          </form> 
+        </form> 
 
-          <form action="https://wa.me/74993501337" method="GET">
-            <button type="submit" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/225px-WhatsApp.svg.png"
+        <form class="footer__link" action="https://wa.me/74993501337" method="GET">
+            <button class="footer__button" type="submit" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/225px-WhatsApp.svg.png"
             width="50"  height="50" alt="Напишите нам!"></button>
-          </form> 
+        </form> 
     </ul>
     </footer>
 </body>
