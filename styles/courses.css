@@ -1,0 +1,25 @@
+.courses {
+    margin-bottom: 100px;
+}
+
+.courses__image {
+    margin: 0 auto;
+}
+
+.courses__name {
+    text-align: center;
+}
+
+.courses__description {
+    width: 1200px;
+}
+
+.courses__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses__description-time {
+    text-align: center;
+}

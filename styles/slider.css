@@ -1,0 +1,26 @@
+.swiper {
+    overflow: visible;
+}
+  
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: blue;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: black;
+  transition: 0.3s ease;
+}

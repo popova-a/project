@@ -1,0 +1,44 @@
+.wrapper__content {
+    display: none;
+    min-height: 100vh;
+}
+
+.preloader {
+    padding-top: 25%;
+    background: white;
+    transition: opacity 0.5s ease;
+    text-align: center;
+}
+
+.loader span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  margin: 35px 5px;
+}
+
+.dot1 {
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.dot2{
+    animation: bounce 1s ease-in-out 0.33s infinite;
+}
+
+.dot3 {
+    animation: bounce 1s ease-in-out 0.66s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    75%,
+    100% {
+        transform: translateY(0);
+   }
+
+    25% {
+       transform: translateY(-30px);
+   }
+}

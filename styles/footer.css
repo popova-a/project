@@ -1,0 +1,9 @@
+.footer {
+    background-color: rgb(214, 214, 245);
+}
+
+.footer__inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

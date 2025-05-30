@@ -1,4 +1,70 @@
 .header{
     background-color: rgb(214, 214, 245);
-color: black;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__menu-item {
+    list-style: none;
+    padding: 0px;    
+}
+
+
+.header__menu-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__menu-link:hover {
+    color: red;
+    transition: 0.3s ease;
+}
+
+.header__button {
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.header__button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: #fff;
+    opacity: 0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+.tooltip.active {
+    opacity: 1;
+}
+
+.header__logo {
+    position: relative;
 }

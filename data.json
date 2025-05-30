@@ -1,0 +1,18 @@
+[
+   {
+    "image": "images/partner1.png",
+    "iconAlt": "Partner 1",
+    "iconWidth": 390,
+    "iconHeight": 240,
+    "title": "Yandex"
+   },
+
+   {
+    "image": "images/partner2.png",
+    "iconAlt": "Partner 2",
+    "iconWidth": 390,
+    "iconHeight": 240,
+    "title": "Skolkovo"
+   }
+   
+]

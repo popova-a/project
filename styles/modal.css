@@ -1,0 +1,66 @@
+.modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: grey;
+    color: white;
+    max-width: 600px;
+    padding: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 3;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-window.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-window__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 5px;
+}
+
+.modal-window__title {
+    margin-bottom: 15px;
+}
+
+.modal-window__text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-window__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+.modal-window__btn {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 7px 36px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal-window__btn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s ease;
+}

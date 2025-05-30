@@ -8,3 +8,27 @@
 @import "footer.css";
 /* Подключение стилей относящихся к main */
 @import "main.css";
+/* Подключение стилей about */
+@import "about.css";
+/* Подключение стилей adv */
+@import "adv.css";
+/* Подключение стилей courses */
+@import "courses.css";
+/* Подключение стилей form */
+@import "form.css";
+/* Подключение стилей question */
+@import "question.css";
+/* Подключение стилей registration */
+@import "registration.css";
+/* Подключение стилей media */
+@import "media.css";
+/* Подключение стилей modal */
+@import "modal.css";
+/* Подключение стилей reviews */
+@import "reviews.css";
+/* Подключение стилей partners */
+@import "partners.css";
+/* Подключение стилей preloader */
+@import "preloader.css";
+/* Подключение стилей slider */
+@import "slider.css";

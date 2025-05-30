@@ -1,0 +1,15 @@
+.adv {
+    margin-bottom: 100px;
+}
+
+.adv__menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.adv__menu-item {
+    list-style: none;
+    padding: 0px;
+}
