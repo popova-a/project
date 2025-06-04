@@ -104,7 +104,7 @@ if (headerMenu) {
       title: 'О нас',
     },
     link2: {
-      link: '#3',
+      link: '#2',
       title: 'Курсы',
     },
     link3: {
